@@ -1,0 +1,30 @@
+.hamburger {
+    font-size: 60px;
+  
+    display: inline-block;
+  
+    width: 1em;
+    height: 1em;
+    padding: 0;
+  
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    vertical-align: middle;
+  
+    border: 0 none;
+    background: transparent;
+  }
+  /**
+ * Button height fix for Firefox
+ */
+.hamburger::-moz-focus-inner {
+    padding: 0;
+    border: 0 none;
+  }
+  
+  /**
+   * Focus fix for Chrome
+   */
+  .hamburger:focus {
+    outline: 0;
+  }

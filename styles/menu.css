@@ -1,0 +1,93 @@
+/* Menu button and its animation*/
+.menu-btn {
+    float: right;
+    margin: 10px;
+    margin-right: 25px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+
+    background-color: inherit;
+    cursor: pointer;
+    /*transition: all .2s ease-in-out;*/
+    /*border: 1px solid white;*/
+}
+
+.menu-btn_burger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.menu-btn_burger::before {
+    transform: translateY(-9px);
+}
+
+.menu-btn_burger::after {
+    transform: translateY(9px);
+}
+
+.menu-btn.open .menu-btn_burger {
+    
+    transform: translateX(50px);
+
+}
+
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(135deg) translate(35px, 35px);
+    background-color: tomato;
+}
+
+.menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-135deg) translate(35px, -35px);
+    background-color: tomato;
+}
+
+.menu-btn-wrapper {
+    position: sticky;
+    float: right;
+    z-index: 2;
+}
+
+.menu-active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Overlay Menu */
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transition: .2s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
