@@ -1,8 +1,8 @@
 /* Menu button and its animation*/
 .menu-btn {
     float: right;
-    margin: 10px;
-    margin-right: 25px;
+    margin: 40px;
+    margin-right: 70px;
 
     position: relative;
     display: flex;
@@ -12,15 +12,17 @@
     width: 50px;
     height: 50px;
 
-    background-color: inherit;
+    background-color: transparent;
     cursor: pointer;
+
+    z-index: 3;
     /*transition: all .2s ease-in-out;*/
     /*border: 1px solid white;*/
 }
 
 .menu-btn_burger {
     width: 30px;
-    height: 3px;
+    height: 2px;
     background-color: white;
     border-radius: 12px;
     transition: all .2s ease-in-out;
@@ -31,7 +33,7 @@
     content: '';
     position: absolute;
     width: 30px;
-    height: 3px;
+    height: 2px;
     background-color: white;
     border-radius: 5px;
     transition: all .2s ease-in-out;
@@ -45,6 +47,11 @@
     transform: translateY(9px);
 }
 
+.menu-btn.open {
+    background-color: transparent;
+    transition: all .2s ease-in-out;
+}
+
 .menu-btn.open .menu-btn_burger {
     
     transform: translateX(50px);
@@ -53,22 +60,22 @@
 
 .menu-btn.open .menu-btn_burger::before {
     transform: rotate(135deg) translate(35px, 35px);
-    background-color: tomato;
+    background-color: black;
 }
 
 .menu-btn.open .menu-btn_burger::after {
     transform: rotate(-135deg) translate(35px, -35px);
-    background-color: tomato;
+    background-color: black;
 }
 
 .menu-btn-wrapper {
     position: sticky;
     float: right;
-    z-index: 2;
+    transition: all .2s ease-in-out;
 }
 
 .menu-active {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 /* Overlay Menu */
@@ -79,7 +86,7 @@
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     overflow: hidden;
     transition: .2s;
 }
@@ -90,4 +97,49 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    color: black;
+    background-color: transparent;
+}
+
+.overlay-content a {
+    color: black;
+    background-color: transparent;
+}
+
+/* Logo */
+.logo-container {
+    position: absolute;
+    margin: 40px;
+    margin-left: 70px;
+    width: 50px;
+    height: 50px;
+    font-size: default;
+    text-align: center;
+    border: 2.5px solid white;
+    z-index: 2;
+    transition: transform .4s ease-in;
+} 
+  
+.logo-container p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+ }
+  
+.logo-container:hover {
+    transform: rotate(-45deg);
+}
+
+.menu-active-logo {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+.menu-active-logo p {
+    background-color: white;
+    color: black;
 }
