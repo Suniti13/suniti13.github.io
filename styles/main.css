@@ -3,7 +3,55 @@
     margin: 0;
     background-color: black;
     color: white;
+    box-sizing: border-box;
+
+    --Cinnabar : #EF3E36;
   }
 
+/* Main of the home page */
+.main {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  vertical-align: middle;
+  background-color: black;
+  color: white;
+  border: 1px solid var(--Cinnabar);
+}
 
+.main-text-container {
+  text-align: center;
+  padding: 45vh 0;
+}
 
+.main-text-container p{
+  font-size: 5vw;
+}
+
+/* Main of the about page */
+.main-about {
+  display: flex;
+}
+
+.my-about {
+  max-width: 700px;
+  margin-left: 130px;
+  margin-top: 40vh;
+}
+
+.my-about p {
+  font-size: 2em;
+}
+
+.my-image-container {
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: 150px;
+  margin-top: 30vh;
+}
+
+.my-image-container img {
+  width: 300px;
+  height: auto;
+}

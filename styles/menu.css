@@ -1,3 +1,7 @@
+* {
+    --Cinnabar : #EF3E36;
+}
+
 /* Menu button and its animation*/
 .menu-btn {
     float: right;
@@ -94,16 +98,29 @@
 .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
+    width: 50%;
+    max-width: 350px;
     text-align: center;
+    justify-content: center;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
     background-color: transparent;
 }
 
 .overlay-content a {
+    align-self: center;
+    display: block;
     color: black;
     background-color: transparent;
+    text-decoration: none;
+    font-size: 4em;
+    transition: all .4.5s;
+}
+
+.overlay-content a:hover {
+    color: var(--Cinnabar);
 }
 
 /* Logo */
@@ -142,4 +159,13 @@
 .menu-active-logo p {
     background-color: white;
     color: black;
+}
+
+/* Navigation section */
+nav{
+    position:fixed;
+    top:0px;
+    width: 100%;
+    background: transparent;
+    overflow:hidden;
 }
