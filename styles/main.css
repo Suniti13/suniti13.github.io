@@ -1,57 +1,81 @@
+@font-face {
+  font-family: overpass;
+  src: url(./Overpass_Regular.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
     background-color: black;
     color: white;
     box-sizing: border-box;
+    font-family: 'overpass';
 
     --Cinnabar : #EF3E36;
   }
 
+  .fullpage {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+
 /* Main of the home page */
 .main {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
   vertical-align: middle;
   background-color: black;
   color: white;
-  border: 1px solid var(--Cinnabar);
 }
 
 .main-text-container {
-  text-align: center;
-  padding: 45vh 0;
-}
-
-.main-text-container p{
-  font-size: 5vw;
-}
-
-/* Main of the about page */
-.main-about {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-.my-about {
-  max-width: 700px;
-  margin-left: 130px;
-  margin-top: 40vh;
+.main-text-container h1{
+  margin: auto;
+  font-size: 5vw;
+  font-weight: 400;
+  z-index: 0;
 }
 
-.my-about p {
-  font-size: 2em;
+@media (max-width:750px) {
+  .main-text-container {
+    width: 80%;
+  }
+  .main-text-container h1 {
+    font-size: 6vw;
+  }
 }
 
-.my-image-container {
-  width: 300px;
-  height: auto;
-  margin-left: auto;
-  margin-right: 150px;
-  margin-top: 30vh;
+@media (max-width:550px) {
+  .main-text-container h1 {
+    font-size: 6.5vw;
+  }
 }
 
-.my-image-container img {
-  width: 300px;
+@media (max-width:450px) {
+  .main-text-container h1 {
+    font-size: 8.9vw;
+  }
+}
+
+.zero-opacity {
+  opacity: 0;
+}
+
+/* Projects Section */
+.project-img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.project-img img {
+  width: 100%;
   height: auto;
 }

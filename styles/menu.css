@@ -1,5 +1,6 @@
 * {
     --Cinnabar : #EF3E36;
+    box-sizing: border-box;
 }
 
 /* Menu button and its animation*/
@@ -23,6 +24,12 @@
     /*transition: all .2s ease-in-out;*/
     /*border: 1px solid white;*/
 }
+
+@media (max-width:550px) {
+    .menu-btn {
+        margin-right: 40px;
+    }
+  }
 
 .menu-btn_burger {
     width: 30px;
@@ -97,7 +104,8 @@
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
     width: 50%;
     max-width: 350px;
     text-align: center;
@@ -123,6 +131,17 @@
     color: var(--Cinnabar);
 }
 
+@media (max-width:650px) {
+    .overlay-content a {
+        font-size: 3em;
+    }
+}
+@media (max-width:430px) {
+    .overlay-content a {
+        font-size: 2.4em;
+    }
+}
+
 /* Logo */
 .logo-container {
     position: absolute;
@@ -136,13 +155,19 @@
     z-index: 2;
     transition: transform .4s ease-in;
 } 
+
+@media (max-width:550px) {
+    .logo-container {
+        margin-left: 40px;
+    }
+}
   
 .logo-container p {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     transform: translate(-50%, -50%);
  }
   

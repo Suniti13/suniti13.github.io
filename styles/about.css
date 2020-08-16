@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    --Cinnabar : #EF3E36;
+}
+
+/* Main of the about page */
+.main-about {
+    display: flex;
+  }
+  
+  .my-about {
+    max-width: 700px;
+    margin-left: 130px;
+    margin-top: 40vh;
+  }
+  
+  .my-about p {
+    font-size: 2em;
+  }
+  
+  .my-image-container {
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 150px;
+    margin-top: 30vh;
+  }
+  
+  .my-image-container img {
+    width: 300px;
+    height: auto;
+  }
+
+/* Education timeline section */
+.timeline-container {
+  min-height: 70vh;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding: 20px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width:768px) {
+  /* For the vertical line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey;
+  }
+  /* position of each list item */
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+  /* For the round dots on the vertical line */
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 0;
+    background-color: grey;
+  }
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline ul li:hover::after {
+    background-color: var(--Cinnabar);
+  }
+}
+
+.skills img {
+  width: 100px;
+  height: auto;
+  background-color: white;
+}

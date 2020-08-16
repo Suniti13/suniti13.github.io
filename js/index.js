@@ -1,7 +1,8 @@
 const menuBtn = document.querySelector('.menu-btn');
 /*const menuBtnWrapper = document.querySelector('.menu-btn-wrapper');*/
 const overlayNav = document.getElementById('overlay-nav');
-const logoContainer = document.querySelector('.logo-container')
+const logoContainer = document.querySelector('.logo-container');
+const main_container = document.querySelector('.main');
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () =>{
