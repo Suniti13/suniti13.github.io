@@ -1,5 +1,7 @@
 * {
-    --Cinnabar : #EF3E36;
+    --ThirdColor : #4EA5D9; /* Caroline Blue */
+    --Dark : #121212; /* Rich black FOGRA 39*/
+    --Light : #F4F4F9; /* Ghost White */
     box-sizing: border-box;
 }
 
@@ -71,12 +73,12 @@
 
 .menu-btn.open .menu-btn_burger::before {
     transform: rotate(135deg) translate(35px, 35px);
-    background-color: black;
+    background-color: var(--Dark);
 }
 
 .menu-btn.open .menu-btn_burger::after {
     transform: rotate(-135deg) translate(35px, -35px);
-    background-color: black;
+    background-color: var(--Dark);
 }
 
 .menu-btn-wrapper {
@@ -113,14 +115,14 @@
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    color: black;
+    color: var(--Dark);
     background-color: transparent;
 }
 
 .overlay-content a {
     align-self: center;
     display: block;
-    color: black;
+    color: var(--Dark);
     background-color: transparent;
     text-decoration: none;
     font-size: 4em;
@@ -128,7 +130,7 @@
 }
 
 .overlay-content a:hover {
-    color: var(--Cinnabar);
+    color: var(--ThirdColor);
 }
 
 @media (max-width:650px) {
@@ -177,13 +179,13 @@
 
 .menu-active-logo {
     background-color: white;
-    color: black;
-    border: 3px solid black;
+    color: var(--Dark);
+    border: 3px solid var(--Dark);
 }
 
 .menu-active-logo p {
     background-color: white;
-    color: black;
+    color: var(--Dark);
 }
 
 /* Navigation section */
