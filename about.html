@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/about.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
@@ -76,6 +80,33 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <div id="contact" class="footer">
+        <h3>Get in touch</h3>
+        <div class="social-menu">
+            <ul> 
+                <li><a href="https://github.com/Suniti13" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github" style="font-size: 25px;"></i>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/suniti-gaonker/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin"></i>
+                </a></li>
+                <li><a href="https://www.instagram.com/_1unity1_/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-instagram"></i>
+                </a></li>
+                <li><a href="https://twitter.com/GaonkerSuniti" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-twitter"></i>
+                </a></li>
+                <li><a href="sunitigaonkar14@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope"></i>
+                </a></li>
+            
+            </ul>
+        </div>
+    </div>
+
+
     <!-- Navigation section -->
     <nav class="nav">
         <a href="./index.html">
@@ -94,14 +125,19 @@
         <div id="overlay-nav" class="overlay">
             <div class="overlay-content">
                 <a href="./index.html">Home</a>
-                <a href="#">Projects</a>
+                <a href="./index.html#projects-link">Projects</a>
                 <a href="./about.html">About Me</a>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
     
 
     <script src="./js/index.js"></script>  
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

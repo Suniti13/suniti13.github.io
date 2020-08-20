@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./styles/menu.css">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Hello There!</title>
@@ -14,19 +16,30 @@
     
     <!-- Main section of home -->
     <div class="fullpage main">
-        <div class="main-text-container">
-            <h1>I'm <span>Suniti Gaonker</span>, Frontend Developer based in Goa.</h1>
+        <div data-aos="fade-up" 
+            data-aos-anchor-placement="center-center"
+            class="main-text-container">
+            <h1>I'm <span style="color: #4ea5d9;">Suniti Gaonker</span>
+                <span>&mdash;</span>
+                Computer Engineering student. 
+                I like to solve problems and build Websites.
+            </h1>
         </div>
         <div class="scroll-arrow">
-            <a href="#" class="arrow">
+            <a href="#projects-link" class="arrow">
                 <i class="fa fa-angle-down"></i>
             </a>
         </div>
     </div>
     <!-- Project Section -->
-    <div class="projects body-box">
-        <h2 style="text-align: center;">Projects</h2>
-        <div class="project">
+    <div id="projects-link" class="projects body-box">
+        <h2>
+            <u>
+            Projects 
+            </u>
+        </h2>
+        <!-- Project 1 -->
+        <div class="project reverse-flex">
             <div class="project-text">
                 <h3>7 Days 7 Websites</h3>
                 <p>This was a challenge that I took up to build 7 Websites in 7 Days
@@ -38,6 +51,7 @@
                 <img src="./img/7days7websites.png" alt="">
             </div>
         </div>
+        <!-- Project 2 -->
         <div class="project">
             <div class="project-img">
                 <img style="opacity: .9;" src="./img/calculator.png" alt="">
@@ -48,7 +62,8 @@
                 <p>Visit</p>
             </div>
         </div>
-        <div class="project">
+        <!-- Project 3 -->
+        <div class="project reverse-flex">
             <div class="project-text">
                 <h3>Notes App</h3>
                 <p>A Simple note taking app that keeps track of notes of different users.
@@ -60,9 +75,10 @@
                 <img src="./img/notes1.png" alt="">
             </div>
         </div>
+        <!-- Project 4 -->
         <div class="project">
             <div class="project-img">
-                <img src="./img/smartmockups_kdybosg4.jpg" alt="">
+                <img src="./img/pothead.png" alt="">
             </div>
             <div class="project-text">
                 <h3>Rock Paper Scissors</h3>
@@ -73,15 +89,25 @@
     </div>
 
     <!-- Footer Section -->
-    <div class="footer">
+    <div id="contact" class="footer">
         <h3>Get in touch</h3>
         <div class="social-menu">
             <ul> 
-                <li><a href=""><i class="fa fa-github" style="font-size: 25px;"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://github.com/Suniti13" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github" style="font-size: 25px;"></i>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/suniti-gaonker/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin"></i>
+                </a></li>
+                <li><a href="https://www.instagram.com/_1unity1_/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-instagram"></i>
+                </a></li>
+                <li><a href="https://twitter.com/GaonkerSuniti" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-twitter"></i>
+                </a></li>
+                <li><a href="sunitigaonkar14@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope"></i>
+                </a></li>
             
             </ul>
         </div>
@@ -105,12 +131,17 @@
         <div id="overlay-nav" class="overlay">
             <div class="overlay-content">
                 <a href="./index.html">Home</a>
-                <a href="#">Projects</a>
+                <a href="#projects-link">Projects</a>
                 <a href="./about.html">About Me</a>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
     <script src="./js/index.js"></script>    
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
