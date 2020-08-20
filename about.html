@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Roboto Slab Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">    
+    
     
     <title>About</title>
 </head>
@@ -19,11 +22,16 @@
     <!-- Main of About page -->
     <div class="fullpage main-about body-box">
         <div class="about-wrapper">
-            <div class="my-about">
-                <p>I'm <span>Suniti Gaonker</span></p>
+            <div class="my-about" data-aos="fade-up">
+                <h2 data-aos="fade-up"><u>About Me</u></h2>
+                <p><span>Hello, I'm Suniti Gaonker</span></p>
                 <p>
-                    Currently a student of Computer Engineering. I like to solve
-                    problems and build Websites. 
+                    Currently I am a Computer Engineering student, based in Goa.
+                    I have a great passion for programming and I love what I do.
+                </p>
+                <p>
+                    I have some experience in Frontend Web Development and I am aspiring to be 
+                    a Fullstack Developer. 
                 </p>
             </div>
             <div class="my-image-container">
@@ -32,25 +40,28 @@
         </div>
     </div>
     <!-- Skills -->
-    <div class="skills-section body-box">
-        <h2 style="text-align: center;">I am comfortable working with</h2>
-        <div class="skills">
-            <img src="./img/HTML5_white.png" alt="">
-            <img src="./img/HTML5_white.png" alt="">
-            <img src="./img/HTML5_white.png" alt="">
-            <img src="./img/HTML5_white.png" alt="">
-            <img src="./img/HTML5_white.png" alt="">
+    <div class="skills-section-wrapper">
+        <div class="skills-section body-box" data-aos="fade-up">
+            <h2 style="text-align: center;">Skills</h2>
+            <p>I am comfortable working with</p>
+            <div class="skills" data-aos="fade-up">
+                <p>&mdash; HTML</p>
+                <p>&mdash; CSS</p>
+                <p>&mdash; JS</p>
+                <p>&mdash; Flask</p>
+                <p>&mdash; Python</p>
+            </div>
         </div>
     </div>
 
     <!-- Education timeline section -->
-    <div class="fullpage education-section">
-        <h2 style="text-align: center;">My Education</h2>
+    <div class="education-section">
+        <h2 style="text-align: center;" data-aos="fade-up">My Education</h2>
         <div class="timeline-container">
             <div class="timeline">
                 <ul>
                     <li>
-                        <div class="timeline-content">
+                        <div class="timeline-content" data-aos="fade-right">
                             <p class="year">2015 - 2016</p>
                             <h3>SSC</h3>
                             <p>Shri Shantadurga High School,</p>
@@ -59,7 +70,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-content">
+                        <div class="timeline-content" data-aos="fade-left">
                             <p class="year">2017 - 2018</p>
                             <h3>HSSC</h3>
                             <p>Dempo Higher Secondary School of Science Trust,</p>
@@ -68,7 +79,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-content">
+                        <div class="timeline-content" data-aos="fade-right">
                             <p class="year">2018 - 2022</p>
                             <h3>Computer Engineering</h3>
                             <p>Goa College of Engineering,</p>
@@ -81,10 +92,16 @@
         </div>
     </div>
 
+    <div class="goto">
+        <a href="./index.html#projects-link">
+            <button>View Projects</button>
+        </a>
+    </div>
+
     <!-- Footer Section -->
     <div id="contact" class="footer">
         <h3>Get in touch</h3>
-        <div class="social-menu">
+        <div class="social-menu" data-aos="fade-up">
             <ul> 
                 <li><a href="https://github.com/Suniti13" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-github" style="font-size: 25px;"></i>
@@ -124,10 +141,10 @@
         <!-- Overlay nav -->
         <div id="overlay-nav" class="overlay">
             <div class="overlay-content">
-                <a href="./index.html">Home</a>
-                <a href="./index.html#projects-link">Projects</a>
-                <a href="./about.html">About Me</a>
-                <a href="#contact">Contact</a>
+                <a  class="home-nav" href="./index.html">Home</a>
+                <a  class="projects-nav" href="./index.html#projects-link">Projects</a>
+                <a  class="about-nav" href="./about.html">About Me</a>
+                <a  class="contact-nav" href="#contact">Contact</a>
             </div>
         </div>
     </nav>

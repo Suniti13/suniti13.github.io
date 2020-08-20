@@ -20,6 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
 .body-box {
   margin: 0 120px;
 }
@@ -42,7 +46,7 @@ html {
 
 .arrow {
   text-decoration: none;
-  color: white;
+  color: var(--Light);
   font-size: 50px;
   font-weight: 300;
 }
@@ -171,8 +175,14 @@ html {
 }
 
 .project-text p {
+  font-family: 'Roboto Slab', serif;
   font-size: 1.3em;
   color: rgb(200, 200, 200);
+}
+
+.project-text a {
+  color: var(--ThirdColor);
+  font-weight: lighter;
 }
 
 .project-img {
@@ -301,7 +311,7 @@ html {
   width: 100%;
   border-radius: 50%;
   transition: .6s;
-  color: white;
+  color: var(--Light);
   background-color: transparent;
 }
 
@@ -311,7 +321,7 @@ html {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1.5px solid white;
+  border: 1.5px solid var(--Light);
   text-align: center;
   transition: .6s;
 }
@@ -327,16 +337,44 @@ html {
   .social-menu ul li a {
     width: 40px;
     height: 40px;
-    border: 1px solid white;
+    border: 1px solid var(--Light);
   }
 }
 
 .social-menu ul li a:hover {
   color: black;
-  background-color: white;
+  background-color: var(--Light);
 }
 
 .social-menu ul li .fa:hover {
   color: black;
-  background-color: white;
+  background-color: var(--Light);
+}
+
+/*Go to Button*/
+.goto {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+}
+
+.goto a {
+  height: 60px;
+  width: 20%;
+  width: 150px;
+  margin: 30px auto;
+  border: 2px solid var(--Light);
+}
+
+.goto a button{
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  font-weight: 600;
+  border: none;
+}
+
+.goto button:hover{
+  color: var(--Dark);
+  background-color: var(--Light);
 }

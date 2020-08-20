@@ -1,9 +1,20 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: var(--Light);
     --ThirdColor : #4EA5D9; /* Caroline Blue */
     --Dark : #121212; /* Rich black FOGRA 39*/
     --Light : #F4F4F9; /* Ghost White */
+}
+
+h2 {
+  font-size: 3em;
+}
+
+@media (max-width:550px) {
+  h2{
+    font-size: 2em;
+  }
 }
 
 /* Main of the about page */
@@ -11,6 +22,7 @@
 .about-wrapper {
   margin: 0 auto;
   width: 95%;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25,9 +37,25 @@
     width: 65%;
     padding: 50px;   
 }
-  
+ 
+.my-about h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.my-about h2 u {
+  text-decoration-color: var(--ThirdColor);
+}
+
 .my-about p {
-    font-size: 2em;
+  font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    margin: 8px;
+    margin-left: inherit;
+}
+
+.my-about p span {
+  font-size: 1.5em;
 }
   
 .my-image-container {
@@ -41,7 +69,16 @@
     height: auto;
 }
 
-@media (max-width:750px) {
+@media (max-width:1050px) {
+  .my-about {
+    width: 60%;
+  }
+  .my-image-container {
+    width: 40%;
+  }
+}
+
+@media (max-width:950px) {
   .about-wrapper {
     margin-top: 120px;
   }
@@ -79,6 +116,7 @@
   width: 80%;
   height: auto;
   max-width: 800px;
+  height: auto;
   position: relative;
 }
 
@@ -96,12 +134,14 @@
 }
 
 .timeline-content h3 {
+  font-size: 30px;
   margin-bottom: 5px;
   background: transparent;
 }
 
 .timeline-content p {
-  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
   background: transparent;
   color: rgb(200, 200, 200);
 }
@@ -109,7 +149,7 @@
 .year {
   position: relative;
   top: -6px;
-  font-size: 13px !important;
+  font-size: 17px !important;
   font-weight: bold;
   letter-spacing: 0.5px;
   color: var(--ThirdColor) !important;
@@ -118,24 +158,27 @@
 /* Smaller Screens */
 @media (max-width:768px) {
   .timeline-container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 30px;
   }
   .timeline {
-    width: 90%;
+    width: 95%;
     margin: 0 80px;
     margin-left: 55px;
+    padding-bottom: 0px;
   }
   .timeline ul li {
+    width: 100%;
     padding: 10px;
     padding-top: 0;
+    margin: 0 auto;
     margin-bottom: 50px;
   }
   .year {
     top: -10px;
   }
-  /* For the vertical line */
+  /* For the vertical line 
   .timeline::before {
     content: '';
     position: absolute;
@@ -143,7 +186,7 @@
     width: 2px;
     background-color: rgb(32, 32, 32);
   }
-  /* For the round dots on the vertical line */
+  /* For the round dots on the vertical line *
   .timeline ul li::after {
     content: '';
     position: absolute;
@@ -155,6 +198,7 @@
     left: -5px;
     background-color: var(--Dark);
   }
+  */
 }
 
 /* Bigger Screens */
@@ -220,11 +264,37 @@
 }
 
 /* Skills section */
+.skills-section-wrapper {
+  position: relative;
+  margin : 0;
+  margin-top: 0;
+  padding: 80px;
+  width: 100%;
+}
+
 .skills-section {
   margin: 250px auto;
 }
 
+.skills-section p {
+  width: 30%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
 .skills {
+  width: 30%;
+  margin: 0 auto;
+
+}
+
+.skills p {
+  text-align: left;
+}
+
+/*.skills {
   display: flex;
   justify-content: center;
   width: 95%;
@@ -232,14 +302,18 @@
   padding: 10px;
 }
 .skills img {
+  background-color: var(--Light);
   width: 20%;
   max-width: 100px;
   height: auto;
   border-radius: 0;
 }
 
+*/
+
 @media (max-width:450px) {
   .skills-section {
     margin: 150px auto;
   }
-}
+
+
