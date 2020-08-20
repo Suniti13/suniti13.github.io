@@ -195,6 +195,7 @@ html {
   }
   .project-text p {
     font-size: 1.1em;
+  }
 }
   
 
@@ -207,6 +208,7 @@ html {
   }
   .project-text p {
     font-size: 1em;
+  }
 }
 
 @media (max-width:980px) {
@@ -267,7 +269,7 @@ html {
 }
 .footer {
   width: 100%;
-  min-height: 100px;
+  min-height: 300px;
   padding: 70px;
   background-color: black;
   margin-bottom: 0;
