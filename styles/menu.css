@@ -125,23 +125,12 @@
     color: var(--Dark);
     background-color: transparent;
     text-decoration: none;
-    font-size: 4em;
+    font-size: 2em;
     transition: all .4.5s;
 }
 
 .overlay-content a:hover {
     color: var(--ThirdColor);
-}
-
-@media (max-width:650px) {
-    .overlay-content a {
-        font-size: 3em;
-    }
-}
-@media (max-width:430px) {
-    .overlay-content a {
-        font-size: 2.4em;
-    }
 }
 
 /* Logo */

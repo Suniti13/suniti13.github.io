@@ -17,11 +17,17 @@
 }
 
 html {
+  font-size: calc(1em + 1vw);
   scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 1.5em;
 }
 
 p {
   font-family: 'Roboto Slab', serif;
+  font-size: .7em;
 }
 
 .body-box {
@@ -146,7 +152,6 @@ p {
 
 .projects h2 {
   margin-bottom: 10px;
-  font-size: 3.1em;
   text-align: center;
 }
 
@@ -170,13 +175,11 @@ p {
 }
 
 .project-text h3 {
-  font-size: 4em;
   font-weight: 550;
 }
 
 .project-text p {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.3em;
   color: rgb(200, 200, 200);
 }
 
@@ -199,28 +202,6 @@ p {
   justify-self: center;
 }
 
-@media (max-width:1200px) {
-  .project-text h3 {
-    font-size: 2.9em;
-  }
-  .project-text p {
-    font-size: 1.1em;
-  }
-}
-  
-
-@media (max-width:1000px) {
-  .projects h2 {
-    font-size: 3.3em;
-  }  
-  .project-text h3 {
-    font-size: 2em;
-  }
-  .project-text p {
-    font-size: 1em;
-  }
-}
-
 @media (max-width:980px) {
   .reverse-flex {
     flex-direction: column-reverse;
@@ -235,23 +216,11 @@ p {
     width: 90%;
     margin: 0 auto;
   } 
-  .projects h2 {
-    font-size: 3em;
-  }
-  .projects p {
-    font-size: 1.2em;
-  }
 }
 
 @media (max-width:700px) {
   .projects {
     margin : 60px;
-  }
-  .projects h2 {
-    font-size: 2.3em;
-  }
-  .projects p {
-    font-size: 1.2em;
   }
   .project-text {
     padding: 25px;
@@ -261,15 +230,6 @@ p {
 @media (max-width:450px) {
   .projects {
     margin : 30px;
-  }
-  .projects h2 {
-    font-size: 1.8em;
-  }  
-  .projects h2 {
-    font-size: 2em;
-  }
-  .projects p {
-    font-size: .9em;
   }
 }
 
@@ -286,7 +246,6 @@ p {
 }
 
 .footer h3 {
-  font-size: 2em;
   margin-bottom: 20px;
   text-align: center;
 }

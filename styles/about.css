@@ -7,14 +7,16 @@
     --Light : #F4F4F9; /* Ghost White */
 }
 
-h2 {
-  font-size: 3em;
+html {
+  font-size: calc(1em + 1vw);
 }
 
-@media (max-width:550px) {
-  h2{
-    font-size: 2em;
-  }
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: .7em;
 }
 
 /* Main of the about page */
@@ -39,7 +41,6 @@ h2 {
 }
  
 .my-about h2 {
-  font-size: 3em;
   margin-bottom: 20px;
 }
 
@@ -49,13 +50,13 @@ h2 {
 
 .my-about p {
   font-family: 'Roboto Slab', serif;
-    font-size: 1.2em;
+    font-size: .65em;
     margin: 8px;
     margin-left: inherit;
 }
 
 .my-about p span {
-  font-size: 1.5em;
+  font-size: 1rem;
 }
   
 .my-image-container {
@@ -88,12 +89,6 @@ h2 {
   }
   .my-image-container {
     width: 50%;
-  }
-}
-
-@media (max-width:400px) {
-  .my-about p {
-    font-size: 1.5em;
   }
 }
 
@@ -133,15 +128,13 @@ h2 {
   border-radius: 5px ;
 }
 
-.timeline-content h3 {
-  font-size: 30px;
+.timeline-content h4 {
   margin-bottom: 5px;
   background: transparent;
 }
 
 .timeline-content p {
   font-family: 'Roboto Slab', serif;
-  font-size: 20px;
   background: transparent;
   color: rgb(200, 200, 200);
 }
@@ -149,7 +142,7 @@ h2 {
 .year {
   position: relative;
   top: -6px;
-  font-size: 17px !important;
+  font-size: .6em !important;
   font-weight: bold;
   letter-spacing: 0.5px;
   color: var(--ThirdColor) !important;
@@ -280,14 +273,13 @@ h2 {
   width: 30%;
   margin: 10px auto;
   text-align: center;
-  font-size: 1.3em;
   margin-bottom: 20px;
 }
 
 .skills {
-  width: 30%;
+  width: 35%;
   margin: 0 auto;
-
+  min-width: 250px;
 }
 
 .skills p {
